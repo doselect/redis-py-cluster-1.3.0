@@ -216,7 +216,7 @@ class NodeManager(object):
                 self.populate_startup_nodes()
                 self.refresh_table_asap = False
 
-            need_full_slots_coverage = self.cluster_require_full_coverage(nodes_cache)
+            #need_full_slots_coverage = self.cluster_require_full_coverage(nodes_cache)
 
             # Validate if all slots are covered or if we should try next startup node
             for i in range(0, self.RedisClusterHashSlots):
